@@ -1,0 +1,627 @@
+/* ===================================
+   TARANG WIN - RESPONSIVE CSS
+   Mobile First Design
+   =================================== */
+
+/* ===================================
+   EXTRA SMALL DEVICES (Phones, < 576px)
+   =================================== */
+@media (max-width: 575.98px) {
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--surface);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+        transition: left var(--transition-normal);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu a {
+        padding: var(--spacing-md);
+        font-size: 1.1rem;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Steps */
+    .step-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin: 0 auto;
+    }
+    
+    /* Contest Grid */
+    .contest-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    /* About Page */
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Support Page */
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .support-options {
+        flex-direction: column;
+    }
+    
+    .support-options .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Legal Pages */
+    .legal-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: var(--spacing-xs);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    /* Error Page */
+    .error-code {
+        font-size: 5rem;
+    }
+    
+    .error-actions {
+        flex-direction: column;
+    }
+    
+    .error-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.95rem;
+    }
+    
+    .btn-large {
+        padding: var(--spacing-md) var(--spacing-lg);
+        font-size: 1rem;
+    }
+}
+
+/* ===================================
+   SMALL DEVICES (Landscape Phones, 576px - 767px)
+   =================================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--surface);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+        transition: left var(--transition-normal);
+        box-shadow: var(--shadow-lg);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        flex-wrap: wrap;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contest Grid */
+    .contest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About Page */
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Support Page */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================================
+   MEDIUM DEVICES (Tablets, 768px - 991px)
+   =================================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navigation */
+    .nav-menu {
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-menu a {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.95rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contest Grid */
+    .contest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About Page */
+    .mission-vision {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Support Page */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================================
+   LARGE DEVICES (Desktops, 992px - 1199px)
+   =================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Hero */
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contest Grid */
+    .contest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About Page */
+    .mission-vision {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Support Page */
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===================================
+   EXTRA LARGE DEVICES (Large Desktops, >= 1200px)
+   =================================== */
+@media (min-width: 1200px) {
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Contest Grid */
+    .contest-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* About Page */
+    .mission-vision {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Support Page */
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ===================================
+   TOUCH DEVICES SPECIFIC
+   =================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .glass-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .nav-menu a:hover::after {
+        width: 0;
+    }
+    
+    .nav-menu a:active::after {
+        width: 80%;
+    }
+    
+    /* Increase tap targets */
+    .btn {
+        min-height: 48px;
+        min-width: 48px;
+    }
+    
+    .faq-question {
+        min-height: 48px;
+    }
+    
+    .nav-toggle {
+        min-height: 48px;
+        min-width: 48px;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+    /* Hide non-essential elements */
+    .navbar,
+    .footer,
+    .hero-buttons,
+    .cta-section,
+    .nav-toggle {
+        display: none !important;
+    }
+    
+    /* Adjust colors for print */
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .glass-card {
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+    
+    /* Ensure text is readable */
+    .hero-title,
+    .section-title,
+    h1, h2, h3 {
+        color: black !important;
+    }
+    
+    p, li, a {
+        color: black !important;
+    }
+    
+    /* Remove animations */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ===================================
+   HIGH DPI/RETINA DISPLAYS
+   =================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Adjust font rendering for high DPI */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* ===================================
+   DARK MODE SUPPORT (Optional)
+   =================================== */
+@media (prefers-color-scheme: dark) {
+    /* Uncomment to enable dark mode */
+    /*
+    :root {
+        --background: #1C1B1F;
+        --surface: #1C1B1F;
+        --on-background: #E6E1E5;
+        --on-surface: #E6E1E5;
+        --on-surface-variant: #CAC4D0;
+        --glass-bg: rgba(28, 27, 31, 0.8);
+        --glass-border: rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar {
+        background: rgba(28, 27, 31, 0.95);
+    }
+    
+    .footer {
+        background: #141214;
+    }
+    */
+}
+
+/* ===================================
+   REDUCED MOTION
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+    /* Disable animations for users who prefer reduced motion */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    body::before {
+        animation: none;
+    }
+    
+    .hero-title,
+    .hero-subtitle,
+    .hero-buttons,
+    .hero-stats {
+        animation: none;
+    }
+}
+
+/* ===================================
+   LANDSCAPE ORIENTATION
+   =================================== */
+@media (orientation: landscape) and (max-height: 500px) {
+    /* Adjust for small landscape screens */
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .page-header {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+/* ===================================
+   ACCESSIBILITY - FOCUS VISIBLE
+   =================================== */
+@media (prefers-reduced-motion: no-preference) {
+    :focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+    }
+}
+
+/* ===================================
+   ACCESSIBILITY - HIGH CONTRAST
+   =================================== */
+@media (prefers-contrast: high) {
+    .glass-card {
+        background: var(--surface);
+        border: 2px solid var(--on-surface);
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
